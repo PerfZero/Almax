@@ -1013,6 +1013,7 @@ margin-bottom: 83px;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  text-align: left;
 }
 
 
@@ -1498,8 +1499,10 @@ margin-bottom: 83px;
   }
 
   .nav-menu.active a {
+    padding-left: 0;
     display: block;
     margin: 10px 0;
+    text-align: left;
   }
 
   .burger-menu {
