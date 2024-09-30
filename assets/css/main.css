@@ -1517,6 +1517,11 @@ margin-bottom: 83px;
     z-index: 99999999;
   }
 
+  .dropdown {
+    position: relative;
+    display: block;
+}
+
   .burger-menu span {
     display: block;
     height: 3px;
