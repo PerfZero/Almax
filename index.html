@@ -12,6 +12,9 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
     <link rel="stylesheet" href="/assets/css/main.css" />
   </head>
   <body>
@@ -51,7 +54,10 @@
     </header>
 
     <section class="main-section container">
-      <div class="content">
+      <div class="content"     data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000">
         <h1 class="content-title">
           <span>ALMAX ASIA</span> – ПАРТНЕР В ОПТИМИЗАЦИИ ВАШЕГО БИЗНЕСА В
           КАЗАХСТАНЕ И УПРАВЛЕНИИ ЗАРУБЕЖНЫМИ ПРОЕКТАМИ в странах ЕАЭС и BRICS
@@ -61,18 +67,21 @@
           новые вызовы внешней среды и внедрить необходимые изменения.
         </p>
       </div>
-      <div class="image">
+      <div class="image"   >
         <img src="/assets/img/Slide.png" alt="Описание изображения" />
-      </div>
+      </div>  
       <div class="scroll-arrow"></div>
 
     </section>
 
-    <section class="services-section">
+    <section class="services-section" >
       <div class="container container-services">
-        <section class="eaec-section">
+        <section class="eaec-section"    >
           <h2 class="eaec-title">ЕАЭС</h2>
-          <ul class="eaec-list">
+          <ul class="eaec-list"  data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000">
             <li class="eaec-item">
               Интеграция интересов бизнеса в рамках ЕАЭС
             </li>
@@ -87,7 +96,10 @@
 
         <section class="brics-section">
           <h2 class="brics-title">BRICS</h2>
-          <ul class="brics-list">
+          <ul class="brics-list"     data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000">
             <li class="brics-item">
               Организация взаимодействия с ведущим бизнес-сообществом BRICS
             </li>
@@ -107,7 +119,10 @@
         <div class="column left-column">
           <div class="about-us-texts">
             <h2 class="about-us-title">О нас</h2>
-            <p class="about-us-text one-text">
+            <p class="about-us-text one-text"  data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000">
               ALMAX ASIA содействует организациям реального сектора экономики,
               помогает во внедрении передовых знаний и практик.
             </p>
@@ -117,13 +132,19 @@
             alt="image_1"
             class="about_images"
           />
-          <p class="about-us-text about-two">
+          <p class="about-us-text about-two"  data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000">
             Наши специалисты в сфере бизнес-консалтинга способны подготовить
             инновационные решения, разработанные в соответствии с требованиями
             наших клиентов.
           </p>
         </div>
-        <div class="column right-column">
+        <div class="column right-column"  data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000">
           <img
             src="/assets/img/image_2.png"
             alt="image_2"
@@ -148,7 +169,10 @@
       </div>
     </section>
 
-    <section class="category-section">
+    <section class="category-section"  data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000">
       <div class="container">
         <div class="cards-container">
           <div class="card">
@@ -184,7 +208,10 @@
       </div>
     </section>
 
-    <section class="contact-section">
+    <section class="contact-section"  data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000">
       <div class="container container-contact">
         <div class="column photo-column">
           <img
@@ -240,7 +267,10 @@
       </div>
     </section>
 
-    <section class="contact-info-section">
+    <section class="contact-info-section"  data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000">
       <div class="container-info">
         <div class="column contact-column">
           <h2 class="contact-info-title">Контакты</h2>
@@ -322,6 +352,10 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 <script src="/assets/js/main.js"></script>
     <script>
         document.querySelector('.burger-menu').addEventListener('click', function() {
@@ -332,5 +366,6 @@
 
 
     </script>
+
   </body>
 </html>

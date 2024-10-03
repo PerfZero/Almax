@@ -12,6 +12,8 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="/assets/css/main.css" />
   </head>
   <body>
@@ -52,10 +54,16 @@
 
     <section class="main-section container page-2">
       <div class="content">
-        <h2 class="content-title">
+        <h2 class="content-title"     data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000">
           Налоговое и бухгалтерское консультирование в странах ЕАЭС
         </h2>
-        <p class="content-description">
+        <p class="content-description"     data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000">
           Мы предоставляем полный спектр налоговых и бухгалтерских услуг для
           бизнеса, работающего на территории Евразийского экономического союза
           (ЕАЭС). Наша команда экспертов поможет вам эффективно управлять
@@ -73,11 +81,14 @@
     <section class="offer container">
       <h1 class="offer__title">Что мы предлагаем:</h1>
       <div class="offer__cards">
-        <div class="offer__card">
+        <div class="offer__card"     data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000">
           <div class="offer__card-icon">
             <img src="/assets/img/offer-1.svg" alt="" />
           </div>
-          <div class="offer__card-title">
+          <div class="offer__card-title" >
             Налоговое планирование и оптимизация
           </div>
           <div class="offer__card-description">
@@ -87,7 +98,10 @@
             минимизацию налоговой нагрузки.
           </div>
         </div>
-        <div class="offer__card">
+        <div class="offer__card"     data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000">
           <div class="offer__card-icon">
             <img src="/assets/img/offer-2.svg" alt="" />
           </div>
@@ -99,7 +113,10 @@
             документов в контролирующие органы.
           </div>
         </div>
-        <div class="offer__card">
+        <div class="offer__card"     data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000">
           <div class="offer__card-icon">
             <img src="/assets/img/offer-3.svg" alt="" />
           </div>
@@ -112,7 +129,10 @@
             полное соответствие отчетов налоговым требованиям каждой страны.
           </div>
         </div>
-        <div class="offer__card">
+        <div class="offer__card"     data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000">
           <div class="offer__card-icon">
             <img src="/assets/img/offer-4.svg" alt="" />
           </div>
@@ -125,7 +145,10 @@
             санкций за несоответствие требованиям законодательства.
           </div>
         </div>
-        <div class="offer__card">
+        <div class="offer__card"     data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000">
           <div class="offer__card-icon">
             <img src="/assets/img/offer-5.svg" alt="" />
           </div>
@@ -139,7 +162,10 @@
             штрафами.
           </div>
         </div>
-        <div class="offer__card">
+        <div class="offer__card"     data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000">
           <div class="offer__card-icon">
             <img src="/assets/img/offer-6.svg" alt="" />
           </div>
@@ -156,7 +182,10 @@
       </div>
     </section>
 
-    <div class="advantages container pg-21">
+    <div class="advantages container pg-21"     data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000">
         <div class="advantages_wrap nowarp">
         <h2 class="advantages__title">Преимущества работы с нами:</h2>
         <ul class="advantages__list">
@@ -168,6 +197,40 @@
     </div>
         <img src="/assets/img/page_b.png" alt="Изображение" class="advantages__image ">
     </div>
+
+    <!-- Попап (изначально скрыт) -->
+<div id="popup" class="popup" style="display:none;">
+  <div class="popup-content">
+      <span class="close">&times;</span>
+      <h2>Закажите услугу онлайн</h2>
+      <p>Заполните форму, и наш специалист свяжется с вами для подтверждения заказа и обсуждения деталей услуги.</p>
+      <form id="popup-form">
+          <input type="text" name="name" placeholder="Имя / Компания *" required><br>
+          
+          <input type="tel" name="phone" placeholder="Телефон *" required><br>
+          
+          <input type="email" name="email" placeholder="Ваша почта *" required><br>
+          
+          <div>
+              <input type="checkbox" name="consent" required>
+              <span>Я согласен на обработку моих персональных данных</span>
+          </div>
+          
+          <button type="submit">Отправить заявку</button>
+          <button type="button" class="cancel">Отмена</button>
+      </form>
+  </div>
+</div>
+
+<!-- Попап с благодарностью -->
+<div id="thankyou-popup" class="popup" style="display:none;">
+  <div class="popup-content">
+      <h2>Спасибо!
+      Ваша заявка успешно отправлена.</h2>
+      <p>Наш специалист свяжется с вами в течение 24 часов для подтверждения заказа и обсуждения деталей. Мы благодарим вас за выбор наших услуг!</p>
+      <button type="button" class="close-thankyou">Закрыть</button>
+  </div>
+</div>
 
     <footer class="footer-section ">
       <div class="container container-footer">
@@ -217,7 +280,10 @@
       </div>
     </footer>
     <script src="/assets/js/main.js"></script>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script>
       document
         .querySelector(".burger-menu")
